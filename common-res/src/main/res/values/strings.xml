@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="General.cancel">Cancel</string>
+    <string name="General.done">Done</string>
+    <string name="General.ok">OK</string>
+    <string name="General.close">Close</string>
+    <string name="General.yes">Yes</string>
+    <string name="General.no">No</string>
+
+    <string name="Error.Default.message">Please try again later</string>
+    <string name="Error.Default.title">Sorry, something went wrong</string>
+    <string name="Error.Network.title">Network Error !!</string>
+
+    <string name="Button.get.product">GET PRODUCT</string>
+
+</resources>

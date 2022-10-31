@@ -1,0 +1,34 @@
+apply plugin: 'kotlin-android'
+
+
+android {
+    compileSdkVersion Releases.compileSdk
+    defaultConfig {
+        minSdkVersion Releases.minSdk
+        targetSdkVersion Releases.targetSdk
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        freeCompilerArgs = ["-XXLanguage:+InlineClasses"]
+    }
+}
+
+dependencies {
+    implementation Deps.kotlinStdlib
+}
